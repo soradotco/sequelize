@@ -115,7 +115,7 @@ describe(Support.getTestDialectTeaser('Model'), () => {
         }
       });
 
-      return User.sync({ force: true }).then(() => {
+      return User.sync({force: true}).then(() => {
         return User.create({
           username: 'gottlieb'
         });
